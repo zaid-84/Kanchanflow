@@ -11,6 +11,7 @@ import {
   MessageCircle,
   ChartNoAxesCombined,
   Smartphone,
+  ChevronDown,
 } from "lucide-react";
 import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
@@ -275,6 +276,142 @@ export default function HomePage() {
             </div>
           </div>
         </section>
+
+        
+        <section className={styles.pricingSection}>
+          <div className={styles.container}>
+            <div className={styles.pricingIntro}>
+              <p className={styles.sectionEyebrow}>SIMPLE, CLEAR PRICING</p>
+              <h2>
+                The right tools for
+                <br />
+                <span>your next stage of growth.</span>
+              </h2>
+              <p>
+                Start with the essentials and explore the tools
+                your manufacturing team needs as it grows.
+              </p>
+            </div>
+
+            <div className={styles.pricingCard}>
+              <div className={styles.pricingCardTop}>
+                <div>
+                  <span className={styles.planLabel}>MADE FOR YOUR WORKFLOW</span>
+                  <h3>Manufacturing CRM</h3>
+                </div>
+                <span className={styles.planBadge}>Flexible plans</span>
+              </div>
+
+              <p className={styles.pricingDescription}>
+                Manage quotations, materials, customer opportunities
+                and work orders in one connected workspace.
+              </p>
+
+              <ul className={styles.pricingBenefits}>
+                <li><CheckCircle2 size={17} /> Quotation and order tracking</li>
+                <li><CheckCircle2 size={17} /> Bill of materials management</li>
+                <li><CheckCircle2 size={17} /> Sales pipeline visibility</li>
+                <li><CheckCircle2 size={17} /> Reports for better decisions</li>
+              </ul>
+
+              <div className={styles.pricingCardBottom}>
+                <span>Find the right plan for your team.</span>
+                <Link href="/pricing" className={styles.primaryButton}>
+                  Explore pricing <ArrowRight size={17} />
+                </Link>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        
+        <section className={styles.faqSection}>
+          <div className={styles.container}>
+            <div className={styles.faqLayout}>
+              <div className={styles.faqIntro}>
+                <p className={styles.sectionEyebrow}>GOOD QUESTIONS</p>
+                <h2>
+                  Clarity before
+                  <br />
+                  <span>you get started.</span>
+                </h2>
+                <p>
+                  A few quick answers about KanchanFlow and how
+                  it supports manufacturing workflows.
+                </p>
+                <Link href="/features" className={styles.faqLink}>
+                  Explore all features <ArrowUpRight size={16} />
+                </Link>
+              </div>
+
+              <div className={styles.faqList}>
+                <details className={styles.faqItem}>
+                  <summary>
+                    What is KanchanFlow?
+                    <ChevronDown size={18} />
+                  </summary>
+                  <p>
+                    KanchanFlow is a manufacturing CRM concept designed
+                    to bring quotations, bills of materials, sales
+                    opportunities and work orders into one connected
+                    workflow.
+                  </p>
+                </details>
+
+                <details className={styles.faqItem}>
+                  <summary>
+                    Who is KanchanFlow designed for?
+                    <ChevronDown size={18} />
+                  </summary>
+                  <p>
+                    It is designed for manufacturing businesses,
+                    engineering workshops, machine manufacturers and
+                    industrial suppliers that want better visibility
+                    across sales and operations.
+                  </p>
+                </details>
+
+                <details className={styles.faqItem}>
+                  <summary>
+                    Can I manage quotations and work orders together?
+                    <ChevronDown size={18} />
+                  </summary>
+                  <p>
+                    The product concept connects quotation and order
+                    tracking with materials and operational workflows,
+                    helping teams keep important information organised.
+                  </p>
+                </details>
+
+                <details className={styles.faqItem}>
+                  <summary>
+                    Does KanchanFlow offer different plans?
+                    <ChevronDown size={18} />
+                  </summary>
+                  <p>
+                    The pricing page presents the plan options for this
+                    assignment prototype. Contact the product team to
+                    confirm actual availability and commercial terms.
+                  </p>
+                </details>
+
+                <details className={styles.faqItem}>
+                  <summary>
+                    Can I use KanchanFlow on mobile?
+                    <ChevronDown size={18} />
+                  </summary>
+                  <p>
+                    This website is designed to adapt to mobile screens.
+                    The mobile app is presented as a product feature
+                    concept; actual app availability would need to be
+                    confirmed by the product team.
+                  </p>
+                </details>
+              </div>
+            </div>
+          </div>
+        </section>
+
 
         <section className={styles.ctaSection}>
           <div className={styles.container}>
