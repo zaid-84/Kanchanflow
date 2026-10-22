@@ -45,6 +45,15 @@
   color: var(--foreground);
 }
 
+.activeLink {
+  color: var(--gold);
+  font-weight: 700;
+}
+
+.activeLink::after {
+  width: 100%;
+}
+
 .cta {
   display: inline-flex;
   min-height: 40px;

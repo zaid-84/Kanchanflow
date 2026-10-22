@@ -3,6 +3,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { ArrowUpRight, Menu, X } from "lucide-react";
 import styles from "./navbar.module.css";
 
@@ -14,6 +15,7 @@ const links = [
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const pathname = usePathname();
 
   return (
     <header className={styles.header}>
@@ -27,15 +29,22 @@ export default function Navbar() {
         </Link>
 
         <div className={styles.links}>
-          {links.map((link) => (
-            <Link
-              key={link.href}
-              href={link.href}
-              className={styles.link}
-            >
-              {link.label}
-            </Link>
-          ))}
+          {links.map((link) => {
+            const isActive = pathname === link.href;
+
+            return (
+              <Link
+                key={link.href}
+                href={link.href}
+                className={`${styles.link} ${
+                  isActive ? styles.activeLink : ""
+                }`}
+                aria-current={isActive ? "page" : undefined}
+              >
+                {link.label}
+              </Link>
+            );
+          })}
         </div>
 
         <Link
@@ -59,16 +68,23 @@ export default function Navbar() {
 
       {menuOpen && (
         <div id="mobile-navigation" className={styles.mobileMenu}>
-          {links.map((link) => (
-            <Link
-              key={link.href}
-              href={link.href}
-              className={styles.link}
-              onClick={() => setMenuOpen(false)}
-            >
-              {link.label}
-            </Link>
-          ))}
+          {links.map((link) => {
+            const isActive = pathname === link.href;
+
+            return (
+              <Link
+                key={link.href}
+                href={link.href}
+                className={`${styles.link} ${
+                  isActive ? styles.activeLink : ""
+                }`}
+                aria-current={isActive ? "page" : undefined}
+                onClick={() => setMenuOpen(false)}
+              >
+                {link.label}
+              </Link>
+            );
+          })}
 
           <Link
             href="/pricing"

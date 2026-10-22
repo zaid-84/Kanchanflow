@@ -1,77 +1,112 @@
-# KanchanFlow — Manufacturing CRM
 
-A modern, responsive marketing website for KanchanFlow, a manufacturing CRM concept designed to help businesses manage quotations, bills of materials, orders, and sales pipelines.
+# KanchanFlow
 
-## Project Overview
+An industrial-modern manufacturing CRM frontend concept built with Next.js, TypeScript, and CSS Modules.
 
-This project is developed as part of the Frontend Internship Selection Assignment at Meru Technosoft Private Limited.
+## Features
 
-The website includes three pages:
-
-- **Home:** Product introduction, features, industries, pricing preview, and FAQs.
-- **Features:** Product capabilities, feature explanations, and a comparison table.
-- **Pricing:** Three pricing plans, a monthly/yearly billing toggle, and FAQs.
+- Responsive homepage with hero, product preview, features, industries, and pricing teaser
+- Dedicated Features page with product previews and a comparison table
+- Pricing page with monthly and annual billing toggle
+- Expandable pricing FAQs
+- Responsive navigation and shared footer
+- Accessible navigation controls and visible keyboard focus styles
+- SEO metadata using the Next.js App Router
 
 ## Tech Stack
 
-- Next.js with App Router
+- Next.js
+- React
 - TypeScript
-- Tailwind CSS
-- ESLint
-- Git and GitHub
-- Vercel for deployment
-
-## Design Decisions
-
-- **Primary background:** Charcoal and graphite.
-- **Accent colour:** Molten gold.
-- **Supporting colours:** Light steel grey and off-white.
-- **Visual direction:** Premium, industrial-modern, and B2B-focused.
-- **Typography:** Strong headings with readable body text.
-
-The design choices are intended to communicate reliability, precision, and efficiency for manufacturing businesses.
+- CSS Modules
+- Lucide React icons
+- Next.js font optimization
 
 ## Getting Started
 
 ### Prerequisites
 
-- Node.js LTS
-- npm
-- Git
+Install a supported version of Node.js and npm.
 
 ### Installation
 
-1. Clone the repository.
-2. Navigate to the project directory.
-3. Install dependencies.
-4. Start the development server.
+Clone the repository:
 
-```bash
-npm install
-npm run dev
-```
+    git clone https://github.com/zaid-84/Kanchanflow.git
+
+Navigate to the project directory:
+
+    cd Kanchanflow
+
+Install dependencies:
+
+    npm install
+
+Start the development server:
+
+    npm run dev
 
 Open http://localhost:3000 in your browser.
 
+### Production Build
+
+    npm run build
+    npm start
+
+## Design System
+
+The interface follows an industrial-modern visual direction.
+
+- Background: #17191C
+- Surface: #22252A
+- Light surface: #2B2E33
+- Primary text: #F5F3EE
+- Muted text: #A7ABB2
+- Accent: #D5A642
+- Borders: #3A3D42
+
+Typography uses Inter.
+
+## Project Structure
+
+    src/
+      app/
+        page.tsx
+        page.module.css
+        features/
+          page.tsx
+          features.module.css
+        pricing/
+          page.tsx
+          pricing.module.css
+        layout.tsx
+        globals.css
+      components/
+        navbar.tsx
+        navbar.module.css
+        footer.tsx
+        footer.module.css
+
 ## Assumptions
 
-- This is a frontend-only demonstration project.
-- No backend, database, or authentication is required.
-- Pricing, dashboard metrics, and example customer data are illustrative.
-- Forms use frontend validation and a success state.
-- External integrations are represented by UI elements unless otherwise implemented.
+- This submission is a frontend-only concept.
+- Authentication, database integration, and real billing are outside the current scope.
+- Pricing values are illustrative and require confirmation before production use.
+- Product dashboard previews use illustrative data rather than live business records.
+- Contact links and other conversion actions may require integration before production.
 
 ## Future Improvements
 
-- Connect forms to a backend service.
-- Integrate real manufacturing CRM data.
-- Add automated end-to-end tests.
-- Further optimize performance and accessibility.
+- Connect a backend and persistent database.
+- Add authentication and role-based permissions.
+- Integrate a real subscription and payment provider.
+- Add automated tests and end-to-end testing.
+- Run Lighthouse audits and optimize based on the measured results.
 
 ## Deployment
 
-Live website: To be added after deployment.
+Deployment URL: Add your published Vercel URL here.
 
 ## Author
 
-Developed for the Meru Technosoft Private Limited Frontend Internship Selection Assignment.
+Built as a frontend development assignment.
