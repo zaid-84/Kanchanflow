@@ -1,0 +1,146 @@
+
+.footer {
+  margin-top: 80px;
+  border-top: 1px solid var(--border);
+  background: #131518;
+}
+
+.container {
+  width: min(1180px, calc(100% - 40px));
+  margin-inline: auto;
+}
+
+.top {
+  display: grid;
+  grid-template-columns: minmax(260px, 2fr) 1fr 1fr;
+  gap: 64px;
+  padding-block: 64px;
+}
+
+.brandBlock {
+  max-width: 390px;
+}
+
+.logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  color: var(--foreground);
+  font-size: 19px;
+  font-weight: 900;
+  letter-spacing: -0.5px;
+}
+
+.logoIcon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--gold);
+}
+
+.gold {
+  color: var(--gold);
+}
+
+.description {
+  margin-top: 20px;
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.exploreLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 20px;
+  color: var(--gold);
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.exploreLink:hover {
+  color: var(--gold-hover);
+}
+
+.linkGroup {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.groupTitle {
+  margin: 0 0 6px;
+  color: var(--foreground);
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.footerLink {
+  color: var(--muted);
+  font-size: 14px;
+  transition: color 180ms ease;
+}
+
+.footerLink:hover {
+  color: var(--gold);
+}
+
+.bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  min-height: 76px;
+  border-top: 1px solid var(--border);
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.bottom p {
+  margin: 0;
+}
+
+.socials {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.socials a {
+  display: inline-flex;
+  color: var(--muted);
+  transition: color 180ms ease;
+}
+
+.socials a:hover {
+  color: var(--gold);
+}
+
+@media (max-width: 767px) {
+  .top {
+    grid-template-columns: 1fr 1fr;
+    gap: 36px 24px;
+    padding-block: 44px;
+  }
+
+  .brandBlock {
+    grid-column: 1 / -1;
+  }
+
+  .bottom {
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    padding-block: 20px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .exploreLink,
+  .footerLink,
+  .socials a {
+    transition: none;
+  }
+}
