@@ -1,36 +1,77 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# KanchanFlow — Manufacturing CRM
+
+A modern, responsive marketing website for KanchanFlow, a manufacturing CRM concept designed to help businesses manage quotations, bills of materials, orders, and sales pipelines.
+
+## Project Overview
+
+This project is developed as part of the Frontend Internship Selection Assignment at Meru Technosoft Private Limited.
+
+The website includes three pages:
+
+- **Home:** Product introduction, features, industries, pricing preview, and FAQs.
+- **Features:** Product capabilities, feature explanations, and a comparison table.
+- **Pricing:** Three pricing plans, a monthly/yearly billing toggle, and FAQs.
+
+## Tech Stack
+
+- Next.js with App Router
+- TypeScript
+- Tailwind CSS
+- ESLint
+- Git and GitHub
+- Vercel for deployment
+
+## Design Decisions
+
+- **Primary background:** Charcoal and graphite.
+- **Accent colour:** Molten gold.
+- **Supporting colours:** Light steel grey and off-white.
+- **Visual direction:** Premium, industrial-modern, and B2B-focused.
+- **Typography:** Strong headings with readable body text.
+
+The design choices are intended to communicate reliability, precision, and efficiency for manufacturing businesses.
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+
+- Node.js LTS
+- npm
+- Git
+
+### Installation
+
+1. Clone the repository.
+2. Navigate to the project directory.
+3. Install dependencies.
+4. Start the development server.
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open http://localhost:3000 in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Assumptions
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- This is a frontend-only demonstration project.
+- No backend, database, or authentication is required.
+- Pricing, dashboard metrics, and example customer data are illustrative.
+- Forms use frontend validation and a success state.
+- External integrations are represented by UI elements unless otherwise implemented.
 
-## Learn More
+## Future Improvements
 
-To learn more about Next.js, take a look at the following resources:
+- Connect forms to a backend service.
+- Integrate real manufacturing CRM data.
+- Add automated end-to-end tests.
+- Further optimize performance and accessibility.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Deployment
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Live website: To be added after deployment.
 
-## Deploy on Vercel
+## Author
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Developed for the Meru Technosoft Private Limited Frontend Internship Selection Assignment.
